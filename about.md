@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+A technology enthusiast. Always exploring and learning.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+This blog is going to be about me sharing my experiences solving trivial challenges faced during development.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[pkalro05@gmail.com](mailto:pkalro05@gmail.com)

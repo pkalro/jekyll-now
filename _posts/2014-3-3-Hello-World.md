@@ -2,9 +2,3 @@
 layout: post
 title: My first blog post!
 ---
-
----
-
-under construction
-
----

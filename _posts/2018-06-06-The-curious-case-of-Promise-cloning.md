@@ -30,7 +30,7 @@ Since the server in question doesn't respond immediately, the Promise is said to
 
 Once the server responds, the Promise moves to one of the following states:
 
-  * **Fullfilled**- Given the server was successful in returning what we asked for in the HTTP request
+  * **Fulfilled**- Given the server was successful in returning what we asked for in the HTTP request
   * **Rejected** - Given the server failed at giving us what we asked for
 
 #### Coming back to what's causing the problem..
@@ -43,7 +43,7 @@ At the first look, it would look like we are storing a 'reference' to the Promis
   const promise = myPromise;
 ```
 
-However, since the Promise has already **fulfilled**, when we try reusing it , it doesn't 'run'. Therefore the promise doesn't resolve the second time we do the following..
+However, since the Promise has already been **fulfilled**, when we try reusing it , it has already resolved and hence the HTTP call is not triggered again..
 
 ```
 
@@ -63,4 +63,4 @@ setInterval(() => {
   }, 1000);
 ```
 
-Although, **I DO NOT RECOMMEND** reusing promises as it is non standard.
+**I DO NOT RECOMMEND** reusing promises as it is non standard. However, Web developers have to cater to weird feature requirements at times. 

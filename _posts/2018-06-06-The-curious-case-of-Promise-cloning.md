@@ -43,7 +43,7 @@ At the first look, it would look like we are storing a 'reference' to the Promis
   const promise = myPromise;
 ```
 
-However, since the Promise has already been **fulfilled**, when we try reusing it , it has already resolved and hence the HTTP call is not triggered again..
+However, the Promise has already been **fulfilled**. When we try reusing it , it has already resolved. Hence the HTTP call is not triggered again..
 
 ```
 
@@ -63,4 +63,4 @@ setInterval(() => {
   }, 1000);
 ```
 
-**I DO NOT RECOMMEND** reusing promises as it is non standard. However, Web developers have to cater to weird feature requirements at times. 
+**I DO NOT RECOMMEND** reusing promises as it is non standard. However, Web developers have to cater to weird feature requirements at times.

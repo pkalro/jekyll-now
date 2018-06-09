@@ -43,7 +43,7 @@ At the first look, it would look like we are storing a 'reference' to the Promis
   const promise = myPromise;
 ```
 
-However, the Promise has already been **fulfilled**. When we try reusing it , it has already resolved. Hence the HTTP call is not triggered again..
+However, the Promise has already been **fulfilled**. When we try reusing it , it has already been resolved. Hence the HTTP call is not triggered again..
 
 ```
 

@@ -1,15 +1,28 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About me
+description: A brief bio
+sitemap:
+    priority: 0.7
+    lastmod: 2017-11-02
+    changefreq: weekly
 ---
 
-A technology enthusiast. Always exploring and learning.
 
-### More Information
+<span class="image right"><img src="{{ "/images/profile.jpg" | absolute_url }}" alt="" /></span>
 
-This blog is going to be about me sharing my experiences solving trivial challenges faced during development.
+I am a Web Developer from Bangalore.  Currently working with Tesco Bengaluru. I am someone who always likes learning something new and exciting.
 
-### Contact me
 
-[pkalro05@gmail.com](mailto:pkalro05@gmail.com)
+
+### Hobbies
+
+
+* Reading
+* Playstation
+* Binging on TV shows
+
+
+### Quote that defines me
+
+You die the day you stop learning

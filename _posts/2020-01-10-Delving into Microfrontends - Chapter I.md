@@ -22,7 +22,7 @@ This means that though the services have segregated responsibility with their ow
 While this has been the status quo , and there have been some design principles which have certainly made things simpler ( like Composition ), isolating complexity on the frontend has still evaded us. However, there seems to be a new architectural style emerging for the frontend / client application to solve this problem . Enter Microfrontends !
 
 Microfrontends does for the frontend , what Microservices does for the backend. Yes that's how simple it really is. 
-Microfrontends is a means to to run multiple applications on the same webpage . Redefening the previous image to with Micrfrontends would make it look something like this.
+Microfrontends is a means to to run multiple applications on the same webpage . Redefening the previous image with Microfrontends would make it look something like this.
 
 ![Microfrontends simple architecture](/images/microfrontends-simple.jpg)
 

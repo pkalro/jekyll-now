@@ -33,10 +33,9 @@ The first question that comes to our mind is how these Microfrontends communicat
 Microservices communicate among themselves through APIs . An API is an interface provided by a service / function / or any running program which allows outside services / functions to access it.
 Similarly, Microfrontends communicate amongst themselves using APIs . Now you might ask , in Microservices , the APIs are exposed over a communication channel ( or via URI ) and mostly ( not always ) accessed over http/s, but what is the communication channel with Microfrontends, since the frontends already coexist on the same webpage . Well , there are many answers to this . My personal favourite is the JS `window` object. 
 
-More about the window object in Part 2 when we talk about a practical example of rendering multiple micro-apps on the same webpage. 
+More about the window object in Chapter II when we talk about a practical example of rendering multiple micro-apps on the same webpage. 
 
-This post was mostly intended as a starter . For the main course, please wait for Part 2 :D
-
+Chapter I was mainly intended to enter into the world of Microfrontends and understand what the term signifies. In Chapter II , we will cover a practical example and see how we can render multiple applications ( build in ReactJS and VueJS ) on the same webpage.
 
 
 

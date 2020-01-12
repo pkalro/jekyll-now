@@ -14,7 +14,7 @@ We have all heard of Microservices being a popular architectural choice for the 
 
 A practical / simple microservices architecture would look like this
 
-[insert diagram]
+![Microservices simple architecture](/images/microservices-simple.jpg)
 
 
 This means that though the services have segregated responsibility with their own paramaters for handling scale and load, the client or the frontend is still sitting on a monolith which involves combining data from all the microservices and showing it to the user. Which also means that business logic cutting across complex domains, needs to be handled by the same frontend monolith . 
@@ -24,7 +24,7 @@ While this has been the status quo , and there have been some design principles 
 Microfrontends does for the frontend , what Microservices does for the backend. Yes that's how simple it really is. 
 Microfrontends is a means to to run multiple applications on the same webpage . Redefening the previous image to with Micrfrontends would make it look something like this.
 
-[insert diagram]
+![Microfrontends simple architecture](/images/microfrontends-simple.jpg)
 
 As you can see, while Microservices enabled our backend to be split horizontally, our frontend was still a single block in the diagram. With Microfrontends, the frontend has been split with the same boundaries as the backend. Notice how the Backend for frontends [BFF] for each frontend application can still communicate with multiple services to gather the data required. For example, Order page might require details about the inventory available . 
 

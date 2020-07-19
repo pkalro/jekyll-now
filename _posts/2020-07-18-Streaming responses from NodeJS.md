@@ -8,7 +8,7 @@ image: "/images/streams.jpg"
 
 ## Streaming responses with NodeJS and capturing them with oboe
 
-Have you ever had to build a page which shows abundant amount of data which depends on N number of upstream services. Let's say you are building a Users list page which displays users from different countries and each country has it's own upstream service serving the data .
+Have you ever had to build a page which shows abundant amount of data which depends on N number of upstream services. Let's say you are building a Users list page that displays users from different countries and each country has it's own upstream service serving the data.
 
 For example, 
 
@@ -25,14 +25,14 @@ There are a number of ways you can solve this conventionally
     This would mean you keep your front end in the transient state until all the data has loaded.
     The time to first contentful paint will nearly be equal to the slowest API call from the Backend
         
-2. Make multiple API calls from the frontend client instead of doing it from the orchestrator .
+2. Make multiple API calls from the frontend client instead of doing it from the orchestrator.
     This way you can progressively render the users table as and when you start receiving data from 
     the backend services. This is a good way to solve the problem and can be used for simple usecases
-    where you don’t have many API calls to make. But if you have loads of data to load ,
+    where you don’t have many API calls to make. But if you have loads of data to load,
     it can have its shortcomings when it comes to the limitation of the browser of making 
-    multiple API calls to the same domain ( read Domain sharding ) .
+    multiple API calls to the same domain ( read [Domain sharding](https://www.keycdn.com/support/domain-sharding#:~:text=Domain%20sharding%20is%20a%20technique,website%20by%20using%20multiple%20domains.&text=Web%20browsers%20traditionally%20place%20limits,(between%202-16)).
 
-One other solution to this problem which this post focuses on makes use of the best parts of both the methods described above . This solution is *Streaming* .
+One other solution to this problem which this post focuses on makes use of the best parts of both the methods described above . This solution is *Streaming*.
 
 With streaming, we can still make a single API call to a backend ( like method 1 ) and continue progressively rendering the table as and when each service responds ( like method 2 )
 

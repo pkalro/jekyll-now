@@ -16,8 +16,17 @@ For example, 1. UK users come from the UK users service 2. HU users come from th
 
 There are a number of ways you can solve this conventionally
 
-    1. Make a single API call from your frontend client ( called /users maybe ? ) to an orchestrator / BFFE server which takes care of calling all these services , aggregating the data and sending it to the client. This would mean you keep your front end in the transient state until all the data has loaded. The time to first contentful paint will be nearly  be equal to the slowest API call from the Backend
-    2. Make multiple API calls from the frontend client instead of doing it from the orchestrator . This way you can progressively render the users table as and when you start receiving data from the backend services. This is a good way to solve the problem and can be used for simple usecases where you don’t have many API calls to make. But if you have loads of data to load , it can have its shortcomings when it comes to the limitation of the browser of making multiple API calls to the same domain ( read Domain sharding ) .
+    1. Make a single API call from your frontend client ( called /users maybe ? ) to an orchestrator / BFFE server
+        which takes care of calling all these services , aggregating the data and sending it to the client.
+        This would mean you keep your front end in the transient state until all the data has loaded.
+        The time to first contentful paint will be nearly  be equal to the slowest API call from the Backend
+        
+    2. Make multiple API calls from the frontend client instead of doing it from the orchestrator .
+        This way you can progressively render the users table as and when you start receiving data from 
+        the backend services. This is a good way to solve the problem and can be used for simple usecases
+        where you don’t have many API calls to make. But if you have loads of data to load ,
+        it can have its shortcomings when it comes to the limitation of the browser of making 
+        multiple API calls to the same domain ( read Domain sharding ) .
 
 One other solution to this problem which this post focusses on makes use of the best parts of both the methods described above . This solution is Streaming .
 

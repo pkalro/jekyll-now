@@ -30,7 +30,7 @@ There are a number of ways you can solve this conventionally
     the backend services. This is a good way to solve the problem and can be used for simple usecases
     where you don’t have many API calls to make. But if you have loads of data to load,
     it can have its shortcomings when it comes to the limitation of the browser of making 
-    multiple API calls to the same domain ( read [Domain sharding](https://www.keycdn.com/support/domain-sharding#:~:text=Domain%20sharding%20is%20a%20technique,website%20by%20using%20multiple%20domains.&text=Web%20browsers%20traditionally%20place%20limits,(between%202-16)).
+    multiple API calls to the same domain ( read [Domain sharding](https://www.keycdn.com/support/domain-sharding#:~:text=Domain%20sharding%20is%20a%20technique,website%20by%20using%20multiple%20domains.&text=Web%20browsers%20traditionally%20place%20limits,(between%202-16)))
 
 One other solution to this problem which this post focuses on makes use of the best parts of both the methods described above . This solution is *Streaming*.
 

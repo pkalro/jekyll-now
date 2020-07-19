@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Streaming with  NodeJS and oboe.js"
+title: "Streaming with NodeJS and oboe.js"
 date: 2020-07-18
-excerpt: "Streams - NodeJS"
+excerpt: "Solve the age old problem of orchestrating heavy volume of data and progressively rendering your UI with NodeJS / oboe"
 image: "/images/streams.jpg"
 ---
 

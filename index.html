@@ -7,171 +7,180 @@ priority: 1.0
 lastmod: 2017-11-02
 changefreq: weekly
 ---
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <html>
-<head>
-  {% include head.html %}
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+      <!-- Intro -->
+      <div id="intro">
+        <h1>{{site.title}}</h1>
+        <h3>{{site.bio}}</h3>
+        <p>{{site.description}}</p>
+      </div>
 
+      <!-- Header -->
 
-</head>
-<body class="is-loading">
+      <!-- Nav -->
+      <nav id="nav">
+        {% include nav.html %}
 
-  <!-- Wrapper -->
-  <div id="wrapper" class="fade-in">
+        <ul class="icons">
+          <li>
+            <a
+              href="https://twitter.com/{{site.twitter}}"
+              class="icon fa-twitter"
+              rel="nofollow"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://facebook.com/{{site.facebook}}"
+              class="icon fa-facebook"
+              rel="nofollow"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/{{site.instagram}}"
+              class="icon fa-instagram"
+              rel="nofollow"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/{{site.github}}"
+              class="icon fa-github"
+              rel="nofollow"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
 
-    <!-- Intro -->
-    <div id="intro">
-      <h1>{{site.title}}</h1>
-      <h3>{{site.bio}}</h3>
-      <p>{{site.description}}</p>
+      <!-- Main -->
+      <div id="main">
+        <!-- Featured Post -->
 
-    </div>
+        <article class="post featured skillset">
+          <section>
+            <h3>Libraries/ Frameworks</h3>
 
-    <!-- Header -->
+            <div class="rating">
+              <h4>ReactJS</h4>
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
 
-    <!-- Nav -->
-    <nav id="nav">
+            <div class="rating">
+              <h4>Angular</h4>
+              <span>☆</span><span>☆</span><span>☆</span>
+            </div>
 
-      {% include nav.html %}
+            <div class="rating">
+              <h4>jQuery</h4>
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="rating">
+              <h4>Redux</h4>
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </section>
+          <section>
+            <h3>Tools</h3>
 
-      <ul class="icons">
-        <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-        <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-        <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-        <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-      </ul>
-    </nav>
+            <div class="rating">
+              <h4>Webpack</h4>
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="rating">
+              <h4>ParcelJS</h4>
+              <span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="rating">
+              <h4>Gulp</h4>
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </section>
+          <section>
+            <h3>Others/Misc</h3>
 
-    <!-- Main -->
-    <div id="main">
-      <!-- Featured Post -->
+            <div class="rating">
+              <h4>TDD</h4>
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
 
-      <article class="post featured skillset">
+            <div class="rating">
+              <h4>CSS</h4>
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
 
+            <div class="rating">
+              <h4>HTML</h4>
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="rating">
+              <h4>NodeJS</h4>
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </section>
+          <section>
+            <h3>Programming languages</h3>
 
-        <section>
-          <h3>Libraries/ Frameworks</h3>
+            <div class="rating">
+              <h4>JavaScript</h4>
+              <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
 
-          <div class="rating">
-            <h4>ReactJS</h4>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-
-          <div class="rating">
-            <h4>Angular</h4>
-            <span>☆</span><span>☆</span><span>☆</span>
-          </div>
-
-          <div class="rating">
-            <h4>jQuery</h4>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <div class="rating">
-            <h4>Redux</h4>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-
-        </section>
-        <section>
-          <h3>Tools</h3>
-
-          <div class="rating">
-            <h4>Webpack</h4>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <div class="rating">
-            <h4>ParcelJS</h4>
-            <span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <div class="rating">
-            <h4>Gulp</h4>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-
-
-
-        </section>
-        <section>
-          <h3>Others/Misc</h3>
-
-          <div class="rating">
-            <h4>TDD</h4>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-
-          <div class="rating">
-            <h4>CSS</h4>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-
-          <div class="rating">
-            <h4>HTML</h4>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-          <div class="rating">
-            <h4>NodeJS</h4>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-        </section>
-        <section>
-          <h3>Programming languages</h3>
-
-          <div class="rating">
-            <h4>JavaScript</h4>
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-          </div>
-
-          <div class="rating">
-            <h4>Python</h4>
-            <span>☆</span><span>☆</span><span>☆</span>
-          </div>
-        </section>
-
-
-      </article>
-
-      <!-- Posts -->
-      <section class="posts">
-        {% for post in site.posts limit:3 %}
-        {% assign mod3 = forloop.index | modulo: 3 %}
-        <article>
-          <header>
-            <span class="date">{{ post.date | date_to_string }}</span>
-            <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-          </header>
-          <a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-          <p>{{ post.excerpt }}</p>
-          <ul class="actions">
-            <li><a href="{{ post.url | absolute_url }}" class="button">Read more</a></li>
-          </ul>
+            <div class="rating">
+              <h4>Python</h4>
+              <span>☆</span><span>☆</span><span>☆</span>
+            </div>
+          </section>
         </article>
-        {% if mod3 == 0 %}
-        <article>
-          <header>
-            <h2><a href="#">Sponsored</a></h2>
-          </header>
 
-        </article>
-        {% endif %}
-        {% endfor %}
+        <!-- Posts -->
+        <section class="posts">
+          {% for post in site.posts limit:3 %} {% assign mod3 = forloop.index |
+          modulo: 3 %}
+          <article>
+            <header>
+              <span class="date">{{ post.date | date_to_string }}</span>
+              <h2>
+                <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+              </h2>
+            </header>
+            <a href="{{ post.url | absolute_url }}" class="image fit"
+              ><img src="{{ post.image | absolute_url }}" alt=""
+            /></a>
+            <p>{{ post.excerpt }}</p>
+            <ul class="actions">
+              <li>
+                <a href="{{ post.url | absolute_url }}" class="button"
+                  >Read more</a
+                >
+              </li>
+            </ul>
+          </article>
 
-      </section>
+          {% endfor %}
+        </section>
+
+        <!-- Footer -->
+        <footer></footer>
+      </div>
 
       <!-- Footer -->
-      <footer>
-
-      </footer>
-
+      {% include foot.html %}
     </div>
 
-    <!-- Footer -->
-    {% include foot.html %}
-
-  </div>
-
-  <!-- Scripts -->
-  {% include scripts-main.html %}
-
-
-</body>
+    <!-- Scripts -->
+    {% include scripts-main.html %}
+  </body>
 </html>

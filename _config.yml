@@ -1,48 +1,48 @@
 # Site
-title:              Pranay Kalro
-bio:                'Web developer from Bangalore, India'
-description:        "Currently working with Tesco Bengaluru"
-locale:             en_US
+title: Pranay Kalro
+bio: "Software Engineer from Bangalore, India"
+description: ""
+locale: en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    author:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: "/blog/:title/"
+      layout: post
+      author:
 
 # Jekyll
-permalink:          /blog/:title/
-highlighter:        rouge
+permalink: /blog/:title/
+highlighter: rouge
 kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+mathjax: true
 sass:
-  sass_dir:         _sass
-  style:            compressed
+  sass_dir: _sass
+  style: compressed
 
 # Comments
-disqus_shortname:   default
+disqus_shortname: default
 
 # Social
-analytics-id:       "default"
-twitter:            pkalro
-facebook:           pkalro
-instagram:          pranayvkalro
-github:             pkalro
+analytics-id: "default"
+twitter: pkalro
+facebook: pkalro
+instagram: pranayvkalro
+github: pkalro
 
 # personal
-location:           Bangalore, India
-phone:              9741850461
-email:              pkalro05@gmail.com
+location: Bangalore, India
+phone: 9741850461
+email: pkalro05@gmail.com
 
 # Gems
 gems:
@@ -56,7 +56,22 @@ paginate: 6
 paginate_path: "/blog/page:num/"
 
 jekyll-mentions:
-    base_url: https://github.com
+  base_url: https://github.com
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+exclude:
+  [
+    README.md,
+    Gemfile,
+    Gemfile.lock,
+    node_modules,
+    gulpfile.js,
+    package.json,
+    _site,
+    src,
+    vendor,
+    CNAME,
+    LICENSE,
+    Rakefile,
+    old,
+  ]
